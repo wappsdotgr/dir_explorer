@@ -1,0 +1,9 @@
+[dir1]
+	[dir1.1]
+		file.css
+	[dir1.2]
+	file.txt
+[dir2]
+[dir3]
+file.md
+index.html

@@ -1,0 +1,128 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+html {height:100%;}
+
+body {
+	font-family:monospace;
+	font-size:18px;
+	color:#333;
+	height:100%;
+}
+
+.dn {display:none;}
+
+.pa {
+	position:absolute;
+	left:0;
+	right:0;
+}
+
+header {
+	top:0;
+	height:50px;
+	background:#222;
+	padding:15px;
+}
+
+header a {
+	color:#eee;
+	font-size:20px;
+	text-decoration:none;
+	/*line-height:50px;*/
+	margin:5px;
+}
+header a:hover {color:coral;}
+
+aside {
+	top:50px;
+	bottom:0;
+	width:300px;
+	overflow:hidden;
+}
+
+aside form {
+	width:100%;
+	height:100%;
+}
+
+aside textarea {
+	color:#eee;
+	width:100%;
+	height:100%;
+	padding:5px;
+	background:#444;
+	border:0;
+	border-top:3px solid #3090be;
+	resize:none;
+	outline:none;
+	tab-size:4;
+}
+aside textarea[data-saved="false"] {border-color:#c33;}
+
+section.pa {
+	top:50px;
+	bottom:0;
+	left:300px;
+	padding:10px;
+	background:#eee;
+	overflow-y:auto;
+}
+
+section label {cursor:pointer;}
+
+section li {
+	list-style:none;
+	margin:4px 0px -4px 30px;
+	padding:2px;
+}
+
+section>ul>li {margin-left:5px;}
+
+/*section li img {
+	width:24px;
+	margin:2px 5px -9px -6px;
+}*/
+
+
+section input[type="checkbox"]:checked ~ ul {
+	display:initial;
+}
+section input[type="checkbox"],
+section input[type="checkbox"]:checked ~ .icon-folder,
+section input[type="checkbox"]:not(:checked) ~ ul,
+section input[type="checkbox"]:not(:checked) ~ .icon-folder-open {
+	display:none;
+}
+
+section .grey {
+	color:#888;
+}
+
+
+/* DEBUG */
+
+section pre {
+	font-size:12px;
+	line-height:10px;
+}
+
+section [class^="icon-"], section [class*=" icon-"] {
+	font-size:16px;
+	margin-right:6px;
+}
+
+section[data-colored="false"] [class^="icon-"]:before,
+section[data-colored="false"] [class*=" icon-"]:before {
+	color:#333 !important;
+}
+
+.icon-css:before {color:#0574b9;}
+.icon-default:before {color:#3a3b3c;}
+.icon-html:before {color:#e65025;}
+.icon-java:before {color:#e87324;}
+.icon-js:before {color:#f8c173;}
+.icon-json:before {color:#7fccc6;}
+.icon-mysql:before {color:#1a648e;}
+.icon-php:before {color:#ab759f;}
+.icon-sqlite:before {color:#023b58;}
+.icon-folder:before {color:#;}
+.icon-folder-open:before {color:#;}

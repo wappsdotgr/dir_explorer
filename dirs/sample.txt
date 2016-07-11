@@ -1,0 +1,40 @@
+-|dir1
+	-|dir1.1
+		file.css
+	-|dir1.2
+	file.txt
++|dir2
+-|dir3
+
+file.md
+index.html
+
+:eof:
+
+
+--------------------
+|dir		=
+|dir		close
+--------------------
+|dir		=
+file		close
+--------------------
+file		=
+file		
+====================
+|dir		>
+	|dir	
+--------------------
+|dir		>
+	file	
+====================
+	|dir	<
+|dir		close
+--------------------
+	|dir	<
+file		close
+--------------------
+	file	<
+file		close
+--------------------
+

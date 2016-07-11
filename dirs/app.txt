@@ -1,0 +1,32 @@
+-|_log
+	errors.txt
++|_tmp
++|admin
+	index.html
+-|app
+	+|_helpers
+	+|cache
+	-|mvcf
+		+|controllers
+		+|flat
+		+|models
+		+|views
+		mapping.php
+		routes.php
++|media
+-|system
+	+|css
+	+|js
+	+|langs
++|vendor
+.htaccess
+composer.json
+favicon.ico
+index.php
+
+:eof:
+
+/*
+*/
+	dcfds
+test
