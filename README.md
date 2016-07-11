@@ -1,1 +1,3 @@
 # dir_explorer
+
+just a project to get to know github ...
